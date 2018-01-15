@@ -18,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //print("Estoy en didFinishLaunchingWithOptions (Se ejecuta cuando la app fue abierta y ha terminado de cargar)")
         // Override point for customization after application launch.
         
+        UINavigationBar.appearance().tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        //UINavigationBar.appearance().tintColor = UIColor.black
+        //UINavigationBar.appearance().tintColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0)
+        
+        UINavigationBar.appearance().backgroundColor = #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1)
+        
         return true
     }
 

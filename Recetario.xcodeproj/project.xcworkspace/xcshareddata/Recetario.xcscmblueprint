@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "57BEB4F57CF9E1D7F02B143DF85DDBEFD7516250",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "361AB9E3BD1CE5D04C5E95785DE110B4D04816BE" : 9223372036854775807,
+    "57BEB4F57CF9E1D7F02B143DF85DDBEFD7516250" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "142AC238-6EC9-4C08-BAD3-00928BB6CAB3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "361AB9E3BD1CE5D04C5E95785DE110B4D04816BE" : "",
+    "57BEB4F57CF9E1D7F02B143DF85DDBEFD7516250" : "Recetario\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Recetario",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Recetario.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lconder\/Omnilife_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "361AB9E3BD1CE5D04C5E95785DE110B4D04816BE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lconder\/Recetario.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "57BEB4F57CF9E1D7F02B143DF85DDBEFD7516250"
+    }
+  ]
+}

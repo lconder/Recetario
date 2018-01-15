@@ -325,6 +325,7 @@
 				897C6E46200A4D9100E407BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

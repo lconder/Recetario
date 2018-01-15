@@ -23,7 +23,11 @@ class DetailViewController: UIViewController {
 
         self.recipeImageView.image = recipe.image
     }
-
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,6 +56,7 @@ extension DetailViewController: UITableViewDataSource {
         }
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "DetailRecipeCell" , for: indexPath) as! RecipeDetailViewCell
@@ -65,17 +70,49 @@ extension DetailViewController: UITableViewDataSource {
                 cell.valueLabel.text = self.recipe.name
             case 1:
                 cell.keyLabel.text = "Tiempo:"
-                cell.valueLabel.text = "\(self.recipe.time) min"
+                cell.valueLabel.text = "\(self.recipe.time!) min"
             default:
                 break
             }
             
+        case 1:
             
+            if indexPath.row==0 {
+                cell.keyLabel.text = "Ingredientes:"
+            }else{
+                    cell.keyLabel.text = ""
+            }
+            cell.valueLabel.text = self.recipe.ingredients[indexPath.row]
+        case 2:
+            if indexPath.row==0 {
+                cell.keyLabel.text = "Pasos:"
+            }else{
+                    cell.keyLabel.text = ""
+            }
+            cell.valueLabel.text = self.recipe.steps[indexPath.row]
         default:
             break
         }
         return cell
     }
+    
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        var title = ""
+        
+        switch section {
+        case 1:
+            title = "Ingredientes"
+        case 2:
+            title = "Pasos"
+        default:
+            break
+        }
+        return title
+        
+    }
+    
 }
 
 

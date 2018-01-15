@@ -26,12 +26,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arroz" translatesAutoresizingMaskIntoConstraints="NO" id="R8y-BH-Oxl">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arroz" translatesAutoresizingMaskIntoConstraints="NO" id="R8y-BH-Oxl">
                                             <rect key="frame" x="16" y="16.5" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="50" id="4e0-Sf-cxq"/>
                                                 <constraint firstAttribute="height" constant="50" id="cSb-h5-igg"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="25"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qg8-h8-sGc">
                                             <rect key="frame" x="74" y="0.0" width="301" height="67.5"/>
@@ -176,14 +181,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrf-K4-sQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813.60000000000002" y="16.641679160419791"/>
+            <point key="canvasLocation" x="836" y="17"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QGc-rn-6nt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hku-vl-zbu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cnn-q0-lw0">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="Cnn-q0-lw0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

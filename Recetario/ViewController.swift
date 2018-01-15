@@ -46,6 +46,12 @@ class ViewController: UITableViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.hidesBarsOnSwipe = true
+    }
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -83,6 +89,42 @@ class ViewController: UITableViewController {
         
         
         return cell
+        
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        
+        
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        //compartir
+        let shareAction = UITableViewRowAction(style: .normal, title: "Compartir") { (action, indexPath) in
+            
+            let shareDefaultText = "Estoy mirando la receta de: \(self.recipes[indexPath.row].name!), en la app Recetario"
+            
+            let activityController = UIActivityViewController(activityItems: [shareDefaultText, self.recipes[indexPath.row].image], applicationActivities: nil)
+            
+            self.present(activityController, animated: true, completion: nil)
+            
+            
+        }
+        
+        //borrar
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "Borrar") { (action, indexPath) in
+            
+            self.recipes.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        }
+        
+        shareAction.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        
+        return [shareAction, deleteAction]
         
     }
     
