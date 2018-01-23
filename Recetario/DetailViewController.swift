@@ -14,6 +14,7 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
+    @IBOutlet var ratingButton: UIButton!
     
     
     var recipe: Recipe!
@@ -22,6 +23,10 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
 
         self.recipeImageView.image = recipe.image
+        
+        let image = UIImage(named: self.recipe.rating)
+        self.ratingButton.setImage(image, for: .normal)
+        
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -31,6 +36,23 @@ class DetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func close(segue: UIStoryboardSegue) {
+    
+        if let reviewC = segue.source as? ReviewViewController{
+        
+            if let rating = reviewC.ratingSelected {
+            
+                self.recipe.rating = rating
+                let image = UIImage(named: self.recipe.rating)
+                self.ratingButton.setImage(image, for: .normal)
+                
+            }
+        
+        }
+        
+        
     }
     
 

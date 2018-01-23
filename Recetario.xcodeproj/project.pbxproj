@@ -16,6 +16,7 @@
 		897C6E4A200A788900E407BE /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C6E49200A788900E407BE /* RecipeCell.swift */; };
 		897C6E4C200A845E00E407BE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C6E4B200A845E00E407BE /* DetailViewController.swift */; };
 		897C6E4E200A95A600E407BE /* RecipeDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C6E4D200A95A600E407BE /* RecipeDetailViewCell.swift */; };
+		899D2F38200E41C2003ED4C7 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899D2F37200E41C2003ED4C7 /* ReviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		897C6E49200A788900E407BE /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		897C6E4B200A845E00E407BE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		897C6E4D200A95A600E407BE /* RecipeDetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewCell.swift; sourceTree = "<group>"; };
+		899D2F37200E41C2003ED4C7 /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				897C6E49200A788900E407BE /* RecipeCell.swift */,
 				897C6E4B200A845E00E407BE /* DetailViewController.swift */,
 				897C6E4D200A95A600E407BE /* RecipeDetailViewCell.swift */,
+				899D2F37200E41C2003ED4C7 /* ReviewViewController.swift */,
 				897C6E39200A4D9100E407BE /* Main.storyboard */,
 				897C6E3C200A4D9100E407BE /* Assets.xcassets */,
 				897C6E3E200A4D9100E407BE /* LaunchScreen.storyboard */,
@@ -156,6 +159,7 @@
 			files = (
 				897C6E48200A581D00E407BE /* Recipe.swift in Sources */,
 				897C6E4E200A95A600E407BE /* RecipeDetailViewCell.swift in Sources */,
+				899D2F38200E41C2003ED4C7 /* ReviewViewController.swift in Sources */,
 				897C6E38200A4D9100E407BE /* ViewController.swift in Sources */,
 				897C6E4C200A845E00E407BE /* DetailViewController.swift in Sources */,
 				897C6E36200A4D9100E407BE /* AppDelegate.swift in Sources */,
